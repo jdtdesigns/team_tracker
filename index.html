@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h3 class="center">Team Tracker</h3>
+  <div class="row">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Favorite Team</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="row">
+    <form class="col sm-12 l6 offset-l3">
+      <input type="text" id="name" placeholder="Name">
+      <input type="text" id="age" placeholder="Age">
+      <input type="text" id="team" placeholder="Favorite Team">
+      <button class="btn" type="submit" id="submit">Submit</button>
+      <button id="cancel" class="btn grey darken-1 white-text">Cancel</button>
+    </form>
+  </div>
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  <script>
+    var config = {
+      apiKey: <INSERT YOUR CONFIG INFO>,
+      authDomain: <INSERT YOUR CONFIG INFO>,
+      databaseURL: <INSERT YOUR CONFIG INFO>,
+      projectId: <INSERT YOUR CONFIG INFO>,
+      storageBucket: <INSERT YOUR CONFIG INFO>,
+      messagingSenderId: <INSERT YOUR CONFIG INFO>
+    };
+
+    firebase.initializeApp(config);
+  </script>
+  <script src="js/app.js"></script>  
+</body>
+</html>
